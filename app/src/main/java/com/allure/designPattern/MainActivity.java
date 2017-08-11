@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         try {
-            new CodeMonkeyCacheFactory().generatePhone(AndroidCodeMonkey.class).showCodeMonkeyType();
+            new CodeMonkeyCacheFactory().generateCodeMonkey(AndroidCodeMonkey.class).showCodeMonkeyType();
         } catch (Exception e) {
             e.printStackTrace();
         }
