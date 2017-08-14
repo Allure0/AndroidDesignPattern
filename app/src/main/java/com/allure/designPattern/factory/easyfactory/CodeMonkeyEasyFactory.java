@@ -5,7 +5,7 @@ import com.allure.designPattern.factory.CodeMonkey;
 import com.allure.designPattern.factory.IosCodeMonkey;
 
 /**
- * 简单工厂（不符合开闭原则，适用于业务需求，不适用于架构需求）
+ * 简单工厂（不符合开闭原则，如果有新增程序猿修改需要更改此工厂，适用于业务需求，不适用于架构需求）
  * Created by Allure on 2017/8/11.
  */
 

@@ -4,6 +4,8 @@ import com.allure.designPattern.factory.cachefactory.CodeMonkeyCacheFactory;
 import com.allure.designPattern.factory.easyfactory.CodeMonkeyEasyFactory;
 import com.allure.designPattern.factory.privatefactory.CodeMonkeyPrivateFactory;
 import com.allure.designPattern.factory.reflexfactory.CodeMonkeyReflexFactory;
+import com.allure.designPattern.strategy.HalfPriceStrategy;
+import com.allure.designPattern.strategy.PriceAlgorithm;
 
 /**
  * 工厂模式（非抽象型）
@@ -18,13 +20,16 @@ public class Test {
         //标准工厂
         CodeMonkey codeMonkey = new AndroidCodeMonkey();
         codeMonkey.showCodeMonkeyType();
+
         new IosCodeMonkey().showCodeMonkeyType();
 
         //简单工厂
-        CodeMonkeyEasyFactory.generateCodeMonkey(CodeMonkeyEasyFactory.GENERATE_ANDROID);
-        CodeMonkeyEasyFactory.generateCodeMonkey(CodeMonkeyEasyFactory.GENERATE_IOS);
+        CodeMonkeyEasyFactory.generateCodeMonkey(CodeMonkeyEasyFactory.GENERATE_ANDROID).showCodeMonkeyType();
+
+        CodeMonkeyEasyFactory.generateCodeMonkey(CodeMonkeyEasyFactory.GENERATE_IOS).showCodeMonkeyType();
 
         //结合反射工厂
+
         new CodeMonkeyReflexFactory().generateCodeMonkey(AndroidCodeMonkey.class).showCodeMonkeyType();
 
         //产品类私有构造应用
@@ -32,6 +37,11 @@ public class Test {
 
         //缓存工厂
         new CodeMonkeyCacheFactory().generateCodeMonkey(AndroidCodeMonkey.class).showCodeMonkeyType();
+
+
+        PriceAlgorithm priceAlgorithm=new PriceAlgorithm();
+        priceAlgorithm.setPriceStrategy(new HalfPriceStrategy());
+        priceAlgorithm.getPrice(1);
 
     }
 }
