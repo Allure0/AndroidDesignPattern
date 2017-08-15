@@ -8,6 +8,7 @@ package com.allure.designPattern.singlecase;
  */
 
 public enum SingleTest6 {
+    //第一种方式
 //    INSTANCE;
 //    private CaiPiao instance;
 //
@@ -24,7 +25,7 @@ public enum SingleTest6 {
 //    }
 
 
-
+//第二种方式
     INSTANCE2{
         @Override
         protected void CaiPiao() {

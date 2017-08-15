@@ -1,5 +1,7 @@
 package com.allure.designPattern.factory;
 
+import com.allure.designPattern.factory.abstractfactory.AbstractProductManagerFactory;
+import com.allure.designPattern.factory.abstractfactory.AndroidProductManager;
 import com.allure.designPattern.factory.cachefactory.CodeMonkeyCacheFactory;
 import com.allure.designPattern.factory.easyfactory.CodeMonkeyEasyFactory;
 import com.allure.designPattern.factory.privatefactory.CodeMonkeyPrivateFactory;
@@ -37,6 +39,10 @@ public class Test {
 
         //缓存工厂
         new CodeMonkeyCacheFactory().generateCodeMonkey(AndroidCodeMonkey.class).showCodeMonkeyType();
+
+        //抽象工厂
+        new AbstractProductManagerFactory().showCodeMonkeyType(AndroidCodeMonkey.class);
+        new AbstractProductManagerFactory().showProductManager(AndroidProductManager.class);
 
 
         PriceAlgorithm priceAlgorithm=new PriceAlgorithm();
