@@ -7,6 +7,8 @@ package com.allure.designPattern.factory;
 public class IosCodeMonkey implements  CodeMonkey {
     @Override
     public void showCodeMonkeyType() {
-        System.out.print("我是iOS攻城狮");
+
+        System.out.print("我是iOS攻城狮"+"\n");
+
     }
 }

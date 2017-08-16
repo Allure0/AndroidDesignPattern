@@ -13,6 +13,7 @@ public class CodeMonkeyPrivateFactory extends IGenerator {
     public <T extends CodeMonkey> T generateCodeMonkey(Class<T> clazz) throws Exception {
         CodeMonkey iPhone = null;
         Class phone = Class.forName(clazz.getName());
+        //拿到构造器不检测权限
         phone.getDeclaredConstructor().setAccessible(true);
         iPhone = (CodeMonkey) phone.newInstance();
         return (T) iPhone;

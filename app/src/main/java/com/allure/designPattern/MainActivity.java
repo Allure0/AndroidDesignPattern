@@ -6,6 +6,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.*;
 import android.support.v7.widget.DividerItemDecoration;
 import android.view.View;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import com.allure.designPattern.builder.BuilderActivity;
 import com.allure.designPattern.observe.ObserveActivity;
@@ -70,8 +72,12 @@ public class MainActivity extends AppCompatActivity {
         mainAdapter = new MainAdapter(R.layout.main_item, list);
         recyclerView.setAdapter(mainAdapter);
         mainAdapter.setOnItemClickListener(new BaseQuickAdapter.OnItemClickListener() {
+
+
             @Override
             public void onItemClick(BaseQuickAdapter adapter, View view, int position) {
+                TextView textView= (TextView) view.findViewById(R.id.textview);
+                Toast.makeText(MainActivity.this,textView.getText().toString(),Toast.LENGTH_SHORT).show();
                 switch (position) {
                     //builder模式
                     case 0:

@@ -22,15 +22,13 @@ public class Test {
         //标准工厂
         CodeMonkey codeMonkey = new AndroidCodeMonkey();
         codeMonkey.showCodeMonkeyType();
-
         new IosCodeMonkey().showCodeMonkeyType();
 
         //简单工厂
         CodeMonkeyEasyFactory.generateCodeMonkey(CodeMonkeyEasyFactory.GENERATE_ANDROID).showCodeMonkeyType();
-
         CodeMonkeyEasyFactory.generateCodeMonkey(CodeMonkeyEasyFactory.GENERATE_IOS).showCodeMonkeyType();
 
-        //结合反射工厂
+//        //结合反射工厂
 
         new CodeMonkeyReflexFactory().generateCodeMonkey(AndroidCodeMonkey.class).showCodeMonkeyType();
 
@@ -41,8 +39,8 @@ public class Test {
         new CodeMonkeyCacheFactory().generateCodeMonkey(AndroidCodeMonkey.class).showCodeMonkeyType();
 
         //抽象工厂
-        new AbstractProductManagerFactory().showCodeMonkeyType(AndroidCodeMonkey.class);
-        new AbstractProductManagerFactory().showProductManager(AndroidProductManager.class);
+        new AbstractProductManagerFactory().showCodeMonkeyType(AndroidCodeMonkey.class).showCodeMonkeyType();
+        new AbstractProductManagerFactory().showProductManager(AndroidProductManager.class).showProductManager();
 
 
         PriceAlgorithm priceAlgorithm=new PriceAlgorithm();

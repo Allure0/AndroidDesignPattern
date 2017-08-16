@@ -30,4 +30,6 @@ public class MainAdapter extends BaseQuickAdapter<MainBean, BaseViewHolder> {
         Log.e("2222",item.getName());
         helper.setText(R.id.textview,item.getName());
     }
+
+
 }
