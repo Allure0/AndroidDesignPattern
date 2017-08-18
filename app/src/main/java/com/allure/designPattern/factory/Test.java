@@ -43,9 +43,7 @@ public class Test {
         new AbstractProductManagerFactory().showProductManager(AndroidProductManager.class).showProductManager();
 
 
-        PriceAlgorithm priceAlgorithm=new PriceAlgorithm();
-        priceAlgorithm.setPriceStrategy(new HalfPriceStrategy());
-        priceAlgorithm.getPrice(1);
+
 
     }
 }

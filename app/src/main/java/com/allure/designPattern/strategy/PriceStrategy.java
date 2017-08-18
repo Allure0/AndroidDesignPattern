@@ -7,5 +7,5 @@ package com.allure.designPattern.strategy;
  */
 
 public interface PriceStrategy {
-    int  setPrice(int price);
+    Double  setPrice(int price);
 }

@@ -16,10 +16,10 @@ public class PriceAlgorithm {
         this.priceStrategy = priceStrategy;
     }
 
-    public int getPrice(int price) {
+    public Double getPrice(int price) {
         if(priceStrategy!=null){
             return priceStrategy.setPrice(price);
         }
-        return 0;
+        return null;
     }
 }
