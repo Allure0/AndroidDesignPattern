@@ -1,4 +1,4 @@
-## [Builder模式](https://github.com/Allure0/AndroidDesignPattern/blob/master/app/src/main/java/com/allure/designPattern/builder/BuilderActivity.java)
+# [Builder模式](https://github.com/Allure0/AndroidDesignPattern/blob/master/app/src/main/java/com/allure/designPattern/builder/BuilderActivity.java)
 
 -----
 
