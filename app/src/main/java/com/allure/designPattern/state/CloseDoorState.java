@@ -7,13 +7,13 @@ package com.allure.designPattern.state;
 public class CloseDoorState implements  DoorState {
     @Override
     public void goInDoor() {
-        System.out.print("进不了门");
+        System.out.print("\n"+"关门状态:不可进门");
 
     }
 
     @Override
     public void getOutDoor() {
-        System.out.print("出不了门");
+        System.out.print("\n"+"关门状态:不可以出门");
 
     }
 }

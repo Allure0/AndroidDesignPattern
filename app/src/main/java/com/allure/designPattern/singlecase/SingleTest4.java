@@ -11,9 +11,9 @@ public class SingleTest4 {
     public SingleTest4() {
     }
     public  static SingleTest4 getInstance(){
-        if (instance == null) {//第一层校验
+        if (instance == null) {//线程1第一层校验验证是否为空
             synchronized (SingleTest4.class) {
-                if (instance == null) {//第二层校验
+                if (instance == null) {//第二层校验,线程2次判断，否则还会new
                     instance = new SingleTest4();
                 }
             }

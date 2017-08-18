@@ -8,5 +8,4 @@ package com.allure.designPattern.state;
 public interface Controller {
     void openDoor();//开门
     void closeDoor();//关门
-
 }

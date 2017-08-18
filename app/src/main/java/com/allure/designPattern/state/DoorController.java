@@ -8,18 +8,22 @@ public class DoorController implements Controller {
 
     private DoorState doorState;
 
-    public DoorState setDoorState(DoorState doorState) {
-        this.doorState = doorState;
-        return doorState;
+    public DoorController() {
+    }
+
+    public DoorController(DoorState state) {
+        this.doorState = state;
+    }
+
+
+
+    @Override
+    public void openDoor() {//开门状态
+        doorState.goInDoor();//要进门
     }
 
     @Override
-    public void openDoor() {
-        setDoorState(new OpenDoorState());
-    }
-
-    @Override
-    public void closeDoor() {
-        setDoorState(new CloseDoorState());
+    public void closeDoor() {//关门状态
+        doorState.getOutDoor();//想出门
     }
 }

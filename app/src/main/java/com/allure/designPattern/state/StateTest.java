@@ -8,15 +8,14 @@ public class StateTest {
 
     public static void main(String[] args) {
 
-        DoorController doorController=new DoorController();
-        OpenDoorState openDoorState= (OpenDoorState) doorController.setDoorState(new OpenDoorState());
-        openDoorState.getOutDoor();
-        openDoorState.goInDoor();
+        DoorController doorController = new DoorController(new OpenDoorState());
+        doorController.openDoor();
+        doorController.closeDoor();
 
+        DoorController doorController1 = new DoorController(new CloseDoorState());
+        doorController1.openDoor();
+        doorController1.closeDoor();
 
-        CloseDoorState closeDoorState= (CloseDoorState) doorController.setDoorState(new CloseDoorState());
-        closeDoorState.getOutDoor();
-        closeDoorState.goInDoor();
     }
 
 }
