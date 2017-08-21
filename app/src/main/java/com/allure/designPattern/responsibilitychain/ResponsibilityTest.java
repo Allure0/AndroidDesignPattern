@@ -21,9 +21,9 @@ public class ResponsibilityTest {
         handler1.companyLeader=handler2;
         handler2.companyLeader=handler3;
         //构造三个请求
-        NormalRequest request1 = new NormalRequest("1");
-        MiddleRequest request2 = new MiddleRequest("2");
-        HardRequest request3 = new HardRequest("3");
+        NormalRequest request1 = new NormalRequest(TypeConfig.NORMAL);
+        MiddleRequest request2 = new MiddleRequest(TypeConfig.MIDDEL);
+        HardRequest request3 = new HardRequest(TypeConfig.HARD);
 
         handler1.handleRequest(request1);
         handler1.handleRequest(request2);

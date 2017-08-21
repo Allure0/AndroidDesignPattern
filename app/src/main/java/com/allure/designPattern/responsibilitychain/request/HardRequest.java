@@ -1,13 +1,13 @@
 package com.allure.designPattern.responsibilitychain.request;
 
-import com.allure.designPattern.responsibilitychain.CompanyRequest;
+import com.allure.designPattern.responsibilitychain.TaskRequest;
 import com.allure.designPattern.responsibilitychain.TypeConfig;
 
 /**
  * Created by Allure on 2017/8/14.
  */
 
-public class HardRequest extends CompanyRequest {
+public class HardRequest extends TaskRequest {
 
     public HardRequest(Object obj) {
         super(obj);
@@ -15,6 +15,6 @@ public class HardRequest extends CompanyRequest {
 
     @Override
     public int getRequestType() {
-        return TypeConfig.HARD;
+        return (int) getContent();
     }
 }

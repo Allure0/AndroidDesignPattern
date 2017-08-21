@@ -1,14 +1,13 @@
 package com.allure.designPattern.responsibilitychain.request;
 
-import com.allure.designPattern.responsibilitychain.CompanyRequest;
-import com.allure.designPattern.responsibilitychain.TypeConfig;
+import com.allure.designPattern.responsibilitychain.TaskRequest;
 
 /**
  * 中等难度请求
  * Created by Allure on 2017/8/14.
  */
 
-public class MiddleRequest extends CompanyRequest {
+public class MiddleRequest extends TaskRequest {
 
     public MiddleRequest(Object obj) {
         super(obj);
@@ -16,6 +15,6 @@ public class MiddleRequest extends CompanyRequest {
 
     @Override
     public int getRequestType() {
-        return TypeConfig.MIDDEL;
+        return (int) getContent();
     }
 }

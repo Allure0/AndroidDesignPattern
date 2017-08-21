@@ -6,8 +6,6 @@ import com.allure.designPattern.factory.cachefactory.CodeMonkeyCacheFactory;
 import com.allure.designPattern.factory.easyfactory.CodeMonkeyEasyFactory;
 import com.allure.designPattern.factory.privatefactory.CodeMonkeyPrivateFactory;
 import com.allure.designPattern.factory.reflexfactory.CodeMonkeyReflexFactory;
-import com.allure.designPattern.strategy.HalfPriceStrategy;
-import com.allure.designPattern.strategy.PriceAlgorithm;
 
 /**
  * 工厂模式（非抽象型）
@@ -42,8 +40,8 @@ public class Test {
         new AbstractProductManagerFactory().showCodeMonkeyType(AndroidCodeMonkey.class).showCodeMonkeyType();
         new AbstractProductManagerFactory().showProductManager(AndroidProductManager.class).showProductManager();
 
-
-
-
     }
+
+
+
 }
