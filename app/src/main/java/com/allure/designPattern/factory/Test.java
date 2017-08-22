@@ -40,8 +40,8 @@ public class Test {
         new AbstractProductManagerFactory().showCodeMonkeyType(AndroidCodeMonkey.class).showCodeMonkeyType();
         new AbstractProductManagerFactory().showProductManager(AndroidProductManager.class).showProductManager();
 
-    }
 
+    }
 
 
 }
