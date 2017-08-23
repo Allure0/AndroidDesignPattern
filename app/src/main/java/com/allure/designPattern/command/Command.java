@@ -5,5 +5,5 @@ package com.allure.designPattern.command;
  */
 
 public interface Command {
-    void doSomothing();//具体做设么
+    void doSomothing();//具体做什么
 }

@@ -9,11 +9,11 @@ package com.allure.designPattern.command;
 public class MilitaryTraining {
 
     public void march() {
-        System.out.print("军训齐步");
+        System.out.print("\n"+"军训齐步");
     }
 
     public void goose() {
-        System.out.print("军训正步");
+        System.out.print("\n"+"军训正步");
 
     }
 }

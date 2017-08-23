@@ -1,8 +1,5 @@
 package com.allure.designPattern.command;
 
-import java.util.Observer;
-import java.util.Vector;
-
 /**
  * Created by Allure on 2017/8/14.
  */
@@ -12,7 +9,7 @@ public class CommandTest {
     public static void main(String[] args) {
 
         //第一种方式 直接使用 不采用命令模式 直接调用
-        MilitaryTraining militaryTraining=new MilitaryTraining();
+        MilitaryTraining militaryTraining = new MilitaryTraining();
         militaryTraining.goose();//正步
         militaryTraining.march();//齐步
 
@@ -24,12 +21,11 @@ public class CommandTest {
          *
          * 缺点：命令类很多,对基础技术要求较高，否则难于阅读代码。
          */
-        MilitaryTraining militaryTraining1=new MilitaryTraining();
+        MilitaryTraining militaryTraining1 = new MilitaryTraining();
+        GooseCommand gooseCommand = new GooseCommand(militaryTraining1);
+        MarchCommand marchCommand = new MarchCommand(militaryTraining1);
 
-        GooseCommand gooseCommand=new GooseCommand();
-        MarchCommand marchCommand=new MarchCommand();
-
-       CommandController commandController=new CommandController();
+        CommandController commandController = new CommandController();
 
         commandController.setGooseCommand(gooseCommand);
         commandController.setMarchCommand(marchCommand);

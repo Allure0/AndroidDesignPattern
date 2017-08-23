@@ -8,8 +8,8 @@ package com.allure.designPattern.command;
 public class MarchCommand implements  Command {
     private  MilitaryTraining militaryTraining;
 
-    public void setMilitaryTraining(MilitaryTraining militaryTraining) {
-        this.militaryTraining = militaryTraining;
+    public MarchCommand(MilitaryTraining militaryTraining1) {
+        this.militaryTraining = militaryTraining1;
     }
 
     @Override
