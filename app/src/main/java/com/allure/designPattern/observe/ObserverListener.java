@@ -7,5 +7,5 @@ package com.allure.designPattern.observe;
 
 public interface ObserverListener {
 
-    void update( Object o);
+    void update(Object o);
 }

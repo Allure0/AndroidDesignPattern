@@ -9,5 +9,4 @@ public interface Subject {
     void  register(ObserverListener observer);
     void  unRegister(ObserverListener observer);
     void  notifyChanged( Object arg);
-
 }

@@ -22,7 +22,7 @@ public class ObserverManager implements Subject {
             }
 
         }
-        return  observerManager;
+        return observerManager;
 
     }
     //注册
@@ -45,7 +45,7 @@ public class ObserverManager implements Subject {
 
     //通知
     @Override
-    public void notifyChanged( Object o) {
+    public void notifyChanged(Object o) {
         for (ObserverListener observerListener : list) {
             observerListener.update(o);
         }
