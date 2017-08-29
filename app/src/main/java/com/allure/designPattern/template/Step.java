@@ -5,4 +5,8 @@ package com.allure.designPattern.template;
  */
 
 public interface Step {
+    void stepOne();
+    void stepTwo();
+    void stepThree();
+    void stepFinish();
 }
