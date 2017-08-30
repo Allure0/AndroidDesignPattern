@@ -16,7 +16,7 @@
 ### [迭代器模式](http://www.jianshu.com/p/b79e4afd2b4a)
 ### [模板方法模式](http://www.jianshu.com/p/abe5921f06a8)
 ### [访问者模式](http://www.jianshu.com/p/0c4bada5db69)
-### [中介者模式]()
+### [中介者模式](http://www.jianshu.com/p/877789effe21)
 ### [代理模式]()
 ### [适配器模式]()
 ### [装饰模式]()
