@@ -17,7 +17,7 @@
 ### [模板方法模式](http://www.jianshu.com/p/abe5921f06a8)
 ### [访问者模式](http://www.jianshu.com/p/0c4bada5db69)
 ### [中介者模式](http://www.jianshu.com/p/877789effe21)
-### [代理模式]()
+### [代理模式](http://www.jianshu.com/p/fdf7314c2e52)
 ### [适配器模式]()
 ### [装饰模式]()
 ### [享元模式]()
