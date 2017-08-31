@@ -5,6 +5,6 @@ package com.allure.designPattern.proxy;
  * Created by Allure on 2017/8/31.
  */
 
-public interface AudiCar {
+public interface Car {
     void buyCar();
 }

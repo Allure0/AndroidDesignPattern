@@ -10,19 +10,34 @@ import java.lang.reflect.Proxy;
 
 public class ProxyTest {
 
+    public  static  final  String AUDI="audi";
+    public  static  final  String BMW="bmw";
+    public  static  final  String BENZ="benz";
+    public  static  final  String NONE="none";
+
+
+
     public static void main(String[] args) {
-        //静态代理
+        //静态代理 买奥迪
         UserBuyCar userBuyCar=new UserBuyCar();
-        AudiCarStoreProxy audiCarStoreProxy=new AudiCarStoreProxy(userBuyCar);
+        userBuyCar.setName(AUDI);
+        CarStoreProxy audiCarStoreProxy=new CarStoreProxy(userBuyCar);
         audiCarStoreProxy.buyCar();
 
-
-
-        //动态代理
+        //静态代理 什么也不买
         UserBuyCar userBuyCar1=new UserBuyCar();
-        DynamicProxy dynamicProxy=new DynamicProxy(userBuyCar1);
-        AudiCar audiCar=(AudiCar) Proxy.newProxyInstance(ClassLoader.getSystemClassLoader(), new Class[]{AudiCar.class},  dynamicProxy);
-        audiCar.buyCar();
+        userBuyCar1.setName(NONE);
+        CarStoreProxy carStoreProxy=new CarStoreProxy(userBuyCar1);
+        carStoreProxy.buyCar();
+
+
+
+        //动态代理 买奔驰
+        UserBuyCar userBuyCar2=new UserBuyCar();
+        userBuyCar2.setName(BENZ);
+        DynamicProxy dynamicProxy=new DynamicProxy(userBuyCar2);
+        Car car=(Car) Proxy.newProxyInstance(ClassLoader.getSystemClassLoader(), new Class[]{Car.class},  dynamicProxy);
+        car.buyCar();
 
 
 

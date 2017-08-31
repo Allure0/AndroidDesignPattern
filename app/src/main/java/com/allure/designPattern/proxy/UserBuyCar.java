@@ -9,9 +9,21 @@ package com.allure.designPattern.proxy;
  * Created by Allure on 2017/8/31.
  */
 
-public class UserBuyCar implements AudiCar {
+public class UserBuyCar implements Car {
+
+    private String name;
+
+
     @Override
     public void buyCar() {
-        System.out.print("\n"+"用户买车");
+        System.out.print("\n"+"用户买了"+getName());
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }
