@@ -5,4 +5,6 @@ package com.allure.designPattern.adapter;
  */
 
 public interface Voltage {
+
+    void getVoltage();
 }
