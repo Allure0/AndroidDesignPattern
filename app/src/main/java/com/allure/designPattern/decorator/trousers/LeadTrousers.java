@@ -1,12 +1,15 @@
-package com.allure.designPattern.decorator.equipment;
+package com.allure.designPattern.decorator.trousers;
+
+import com.allure.designPattern.decorator.lead.Lead;
+import com.allure.designPattern.decorator.lead.LeadDecorator;
 
 /**
  * Created by Allure on 2017/9/4.
  */
 
-public class LeadTrousers implements LeadEquipment {
-    @Override
-    public String equipment() {
-        return "下装";
+public class LeadTrousers extends LeadDecorator {
+
+    public LeadTrousers(Lead lead) {
+        super(lead);
     }
 }

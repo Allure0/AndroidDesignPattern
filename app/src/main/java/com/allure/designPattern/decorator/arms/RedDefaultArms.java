@@ -7,10 +7,10 @@ import com.allure.designPattern.decorator.lead.Lead;
  * Created by Allure on 2017/9/4.
  */
 
-public class RedArms extends ArmsDecorator {
+public class RedDefaultArms extends ArmsDecorator {
 
 
-    public RedArms(Lead lead) {
+    public RedDefaultArms(Lead lead) {
         super(lead);
     }
 
@@ -18,13 +18,14 @@ public class RedArms extends ArmsDecorator {
     public void arms() {
         super.arms();
     }
-    @Override
-    public void armsType() {
-        System.out.print("红色武器+");
-    }
 
     @Override
     public void armsColor() {
-        super.armsColor();
+        System.out.println("武器颜色:红色");
+    }
+
+    @Override
+    public void armsType() {
+        System.out.println("更改武器:刀");
     }
 }

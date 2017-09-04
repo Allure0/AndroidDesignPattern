@@ -1,4 +1,4 @@
-package com.allure.designPattern.decorator;
+package com.allure.designPattern.decorator.lead;
 
 /**
  * 主角装备
@@ -6,9 +6,9 @@ package com.allure.designPattern.decorator;
  */
 
 public interface LeadEuipment {
-    public  String arms();//武器
-    public  String boots();//靴子
-    public  String clothes();//上衣
-    public  String helmet();//头盔
-    public  String trousers();//下装
+    public  void arms();//武器
+    public  void boots();//靴子
+    public  void clothes();//上衣
+    public  void helmet();//头盔
+    public  void trousers();//下装
 }

@@ -5,6 +5,7 @@ package com.allure.designPattern.decorator.arms;
  * Created by Allure on 2017/9/4.
  */
 
-public interface  ArmsDes {
+public interface Arms {
      void armsType();//武器类别
+     void armsColor();//武器颜色
 }

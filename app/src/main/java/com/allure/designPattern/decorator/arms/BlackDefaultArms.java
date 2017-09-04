@@ -7,15 +7,15 @@ import com.allure.designPattern.decorator.lead.Lead;
  * Created by Allure on 2017/9/4.
  */
 
-public class BlackArms extends ArmsDecorator {
+public class BlackDefaultArms extends ArmsDecorator {
 
-    public BlackArms(Lead lead) {
+    public BlackDefaultArms(Lead lead) {
         super(lead);
     }
 
 
     @Override
-    public void armsType() {
-        System.out.print("黑色武器+");
+    public void armsColor() {
+        System.out.println("武器颜色:黑色");
     }
 }

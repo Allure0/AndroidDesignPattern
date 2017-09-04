@@ -1,12 +1,15 @@
-package com.allure.designPattern.decorator.equipment;
+package com.allure.designPattern.decorator.clothes;
+
+import com.allure.designPattern.decorator.lead.Lead;
+import com.allure.designPattern.decorator.lead.LeadDecorator;
 
 /**
  * Created by Allure on 2017/9/4.
  */
 
-public class LeadClothes implements LeadEquipment {
-    @Override
-    public String equipment() {
-        return "衣服";
+public class LeadClothes extends LeadDecorator {
+
+    public LeadClothes(Lead lead) {
+        super(lead);
     }
 }
