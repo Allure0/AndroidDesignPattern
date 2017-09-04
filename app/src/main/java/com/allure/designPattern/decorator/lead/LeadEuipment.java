@@ -6,9 +6,5 @@ package com.allure.designPattern.decorator.lead;
  */
 
 public interface LeadEuipment {
-    public  void arms();//武器
-    public  void boots();//靴子
-    public  void clothes();//上衣
-    public  void helmet();//头盔
-    public  void trousers();//下装
+    String equip();//装备
 }

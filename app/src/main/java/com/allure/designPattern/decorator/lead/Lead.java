@@ -7,24 +7,12 @@ package com.allure.designPattern.decorator.lead;
 
 public class Lead implements LeadEuipment {
 
-
-    public void arms() {
-        System.out.println("默认武器");
+    public Lead() {
     }
 
-    public void boots() {
-        System.out.println("默认靴子");
+    @Override
+    public String equip() {
+        return "";
     }
 
-    public void clothes() {
-        System.out.println("默认上衣");
-    }
-
-    public void helmet() {
-        System.out.println("默认头盔");
-    }
-
-    public void trousers() {
-        System.out.println("默认下装");
-    }
 }
