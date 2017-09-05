@@ -21,7 +21,7 @@
 ### [适配器模式](http://www.jianshu.com/p/245e9ea5b2e2)
 ### [组合模式](http://www.jianshu.com/p/fa42da0ba2e7)
 ### [装饰模式](http://www.jianshu.com/p/92c7a51e21ef)
+### [ 外观模式](http://www.jianshu.com/p/e2296c4ca5ed)
 ### [享元模式]()
-### [ 外观模式]()
 ### [桥接模式]()
 
